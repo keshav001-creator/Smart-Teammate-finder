@@ -1,0 +1,88 @@
+/* Full-screen stylish background */
+.dashboard-container {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* Header with logo */
+.dashboard-header {
+  /* margin-bottom: 40px; */
+}
+
+.dashboard-logo {
+  width: 350px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+/* .dashboard-logo:hover {
+  transform: scale(1.05);
+} */
+
+/* Navigation below logo, centered */
+.dashboard-nav {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 60px;
+  justify-content: center;
+}
+
+.dashboard-link {
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s;
+  backdrop-filter: blur(6px);
+}
+
+.dashboard-link:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Main section */
+.dashboard-main {
+  text-align: center;
+  margin-top: 150px;
+  max-width: 800px;
+}
+
+.dashboard-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.dashboard-welcome {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.9);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .dashboard-nav {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .dashboard-title {
+    font-size: 2.2rem;
+  }
+}

@@ -1,0 +1,87 @@
+/* Full-screen container */
+.create-event {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 60px 20px;
+  background: #f9fafb;
+  font-family: 'Inter', 'Roboto', sans-serif;
+}
+
+/* Page title */
+.create-event-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Form container */
+.create-event-form {
+  background: #ffffff;
+  padding: 40px 32px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+/* Labels */
+.create-event-form label {
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+/* Input fields */
+.create-event-form input,
+.create-event-form textarea {
+  padding: 14px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.create-event-form input:focus,
+.create-event-form textarea:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79,70,229,0.2);
+}
+
+/* Button */
+.create-event-form button {
+  padding: 14px 16px;
+  background: linear-gradient(90deg, #4f46e5, #6366f1);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.create-event-form button:hover {
+  background: linear-gradient(90deg, #4338ca, #4f46e5);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(79,70,229,0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .create-event-form {
+    padding: 30px 20px;
+  }
+}

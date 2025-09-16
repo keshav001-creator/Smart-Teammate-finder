@@ -1,0 +1,68 @@
+.eventpage-container {
+  max-width: 1100px;
+  margin: 48px ;
+  margin-left: 400px;
+  padding: 30px 20px;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(44, 62, 80, 0.10);
+  border: 1px solid #e2e8f0;
+}
+.eventpage-hero {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  background: linear-gradient(90deg, #eef6ff, #fff);
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(15, 23, 42, 0.04);
+  box-shadow: var(--shadow-sm);
+}
+.eventpage-hero img {
+  width: 220px;
+  height: 120px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.eventpage-hero .meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.eventpage-hero .meta .tags {
+  display: flex;
+  gap: 8px;
+}
+.eventpage-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+.ticket-btn {
+  background: linear-gradient(90deg, var(--primary), #3182ce);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+.share-btn {
+  background: transparent;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+.eventpage-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+@media (max-width: 900px) {
+  .eventpage-content {
+    grid-template-columns: 1fr;
+  }
+  .eventpage-hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,116 @@
+/* Navbar
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.7), rgba(248, 250, 255, 0.9));
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 12px;
+  z-index: 40;
+}
+
+.navbar .brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar .brand img {
+  height: 36px;
+  width: 36px;
+  border-radius: 8px;
+}
+
+.navbar .brand h1 {
+  font-size: 1.05rem;
+  margin: 0;
+  color: var(--primary);
+}
+
+/* center search like LinkedIn */
+/* .navbar .search-wrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar .search {
+  width: 560px;
+  max-width: 60%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 8px 12px;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow: 0 6px 18px rgba(16, 24, 40, 0.04);
+}
+
+.navbar .search input {
+  flex: 1;
+  border: none;
+  padding: 8px;
+  font-size: 0.95rem;
+}
+
+.navbar .search input:focus {
+  outline: none;
+}
+
+.navbar .actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar .icon-btn {
+  display: inline-grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.navbar .icon-btn:hover {
+  background: rgba(37, 99, 235, 0.06);
+  border-color: rgba(37, 99, 235, 0.08);
+}
+
+.navbar .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+/* notification badge */
+/* .badge {
+  background: #ef4444;
+  color: #fff;
+  border-radius: 999px;
+  padding: 4px 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 10px;
+  }
+  .navbar .search {
+    max-width: 100%;
+    width: 100%;
+  }
+  .navbar .search-wrap {
+    justify-content: flex-start;
+  }
+}  */
