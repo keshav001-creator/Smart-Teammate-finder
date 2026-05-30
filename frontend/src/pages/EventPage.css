@@ -1,68 +1,79 @@
 .eventpage-container {
   max-width: 1100px;
-  margin: 48px ;
-  margin-left: 400px;
+  margin: 48px auto;
   padding: 30px 20px;
   background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
   border-radius: 18px;
   box-shadow: 0 4px 32px rgba(44, 62, 80, 0.10);
   border: 1px solid #e2e8f0;
 }
-.eventpage-hero {
+
+/* Page title */
+.eventpage-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Event Card */
+.event-card {
   display: flex;
-  gap: 18px;
-  align-items: center;
-  background: linear-gradient(90deg, #eef6ff, #fff);
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+
+  background: #ffffff;
   padding: 18px;
   border-radius: 12px;
-  border: 1px solid rgba(15, 23, 42, 0.04);
-  box-shadow: var(--shadow-sm);
+  border-left: 5px solid #4f46e5;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  margin-bottom: 16px;
 }
-.eventpage-hero img {
-  width: 220px;
-  height: 120px;
-  border-radius: 8px;
-  object-fit: cover;
+
+/* Left content */
+.event-info {
+  flex: 1;
 }
-.eventpage-hero .meta {
+
+.event-info h3 {
+  margin: 0;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.event-info p {
+  margin-top: 8px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Right button */
+.event-actions {
   display: flex;
-  flex-direction: column;
-  gap: 6px;
+  align-items: center;
 }
-.eventpage-hero .meta .tags {
-  display: flex;
-  gap: 8px;
-}
-.eventpage-actions {
-  display: flex;
-  gap: 10px;
-  margin-top: 12px;
-}
-.ticket-btn {
-  background: linear-gradient(90deg, var(--primary), #3182ce);
-  color: #fff;
-  padding: 10px 14px;
+
+.join-btn {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 10px 16px;
   border-radius: 10px;
-  font-weight: 700;
+  cursor: pointer;
+  font-weight: 600;
 }
-.share-btn {
-  background: transparent;
-  border: 1px solid rgba(15, 23, 42, 0.06);
-  padding: 10px 12px;
-  border-radius: 10px;
+
+.join-btn:hover {
+  background: #4338ca;
 }
-.eventpage-content {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 16px;
-  margin-top: 16px;
-}
-@media (max-width: 900px) {
-  .eventpage-content {
-    grid-template-columns: 1fr;
-  }
-  .eventpage-hero {
+
+/* Responsive */
+@media (max-width: 768px) {
+  .event-card {
     flex-direction: column;
-    align-items: flex-start;
+  }
+
+  .event-actions {
+    width: 100%;
+    justify-content: flex-end;
   }
 }
