@@ -105,5 +105,9 @@ frontend/
     and serves as a foundation for a scalable teammate discovery system.
   </p>
 
+<h2>🖼 Dashboard Screenshots</h2>
+<img src="frontend/screenshots/Dashboard.png" alt="Dashboard" width="700">
+<img src="frontend/screenshots/Events.png" alt="Event" width="700">
+
 </body>
 </html>
